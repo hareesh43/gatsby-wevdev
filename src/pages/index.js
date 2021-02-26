@@ -1,13 +1,14 @@
 import React from "react"
-import Navbar from "../components/Navbar"
+import Layout from "../components/Layout"
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <h1>Design</h1>
-      <h2>DEvelop & deploy</h2>
-      <p>Become web ninja</p>
-    </div>
+    <Layout>
+      <div>
+        <h1>Design</h1>
+        <h2>DEvelop & deploy</h2>
+        <p>Become web ninja</p>
+      </div>
+    </Layout>
   )
 }
