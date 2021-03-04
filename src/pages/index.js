@@ -2,7 +2,10 @@ import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import style from "../styles/home.module.css"
-export default function Home() {
+
+export default function Home({ data }) {
+  const { title, description } = data.site.siteMetadata
+
   return (
     <Layout>
       <section className={style.header}>
@@ -14,8 +17,22 @@ export default function Home() {
             My Portfolio Projects
           </Link>
         </div>
-        <img src="banner.png" alt="site banner" style = {{maxWidth: "80%"}} />
+        <img src="banner.png" alt="site banner" style={{ maxWidth: "80%" }} />
       </section>
+      <p>
+        {title}-{description}
+      </p>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query SiteInfo {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`
