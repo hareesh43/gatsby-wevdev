@@ -3,8 +3,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import style from "../styles/home.module.css"
 
-export default function Home({ data }) {
-  const { title, description } = data.site.siteMetadata
+export default function Home() {
 
   return (
     <Layout>
@@ -19,20 +18,8 @@ export default function Home({ data }) {
         </div>
         <img src="banner.png" alt="site banner" style={{ maxWidth: "80%" }} />
       </section>
-      <p>
-        {title}-{description}
-      </p>
+    
     </Layout>
   )
 }
 
-export const query = graphql`
-  query SiteInfo {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-`
