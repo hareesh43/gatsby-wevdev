@@ -6,7 +6,15 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `node`,
+        path: `${__dirname}/src/node/`,
+      },
+    },
+  ],
   siteMetadata: {
     title: "Web Worrier",
     description: "web developer",

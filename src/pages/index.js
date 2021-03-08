@@ -1,10 +1,9 @@
 import { Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
-import style from "../styles/home.module.css"
+import * as style from "../styles/home.module.css"
 
 export default function Home() {
-
   return (
     <Layout>
       <section className={style.header}>
@@ -18,8 +17,6 @@ export default function Home() {
         </div>
         <img src="banner.png" alt="site banner" style={{ maxWidth: "80%" }} />
       </section>
-    
     </Layout>
   )
 }
-

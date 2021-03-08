@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../components/Layout"
-import style from "../../styles/project.module.css"
+import * as style from "../../styles/project.module.css"
 export default function Projects() {
   return (
     <Layout>
