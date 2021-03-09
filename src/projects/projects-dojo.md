@@ -1,7 +1,7 @@
 ---
-title:projects portfolio
-stack:HTML-CSS
-slug:projects-dojo
+title: projects portfolio
+stack: HTML-CSS
+slug: projects-dojo
 ---
 
 **Lorem ipsum dolor sit amet, consectetur adip**

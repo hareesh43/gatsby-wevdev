@@ -1,11 +1,29 @@
 .portfolio {
   text-align: center;
 }
-.portfolio  h2 {
+.portfolio h2 {
   font-size: 3em;
   margin-top: 80px;
 }
-.portfolio  h3 {
+.portfolio h3 {
   font-size: 2em;
   font-weight: 400;
+}
+/* add styled to projects list */
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  margin: 80px 20px;
+}
+
+.prjects h3 {
+  text-align: center;
+  margin: 20px auto 0px;
+  font-weight: 400;
+}
+.projects p {
+  color: aliceblue;
+  margin-top: 4px;
 }
