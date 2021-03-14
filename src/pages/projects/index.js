@@ -5,7 +5,7 @@ import * as style from "../../styles/project.module.css"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 export default function Projects({ data }) {
-  console.log(data)
+  
   const projects = data.projects.nodes
   const contact = data.contact.siteMetadata.contact
   return (
